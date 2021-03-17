@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 5</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        h1 {margin-bottom: 30px;}
+        label {font-weight: bold;}
+        input, select {margin-bottom: 10px;}
+        form {width: 30%; padding: 20px; border: solid red; background: lightgrey;}
+        hr {border: 0;}        
+    </style>
+</head>
+<body class="mt-2 ml-4">
+    <h1>Employee Management System</h1>
+    <form id="empForm" action="index.html/form" method="post">
+        <fieldset>
+            <div>
+            <label>8-Digit Employee ID</label><br>
+            <input type="text" id="id" maxlength="8" required>
+            </div>
+            
+            <div>
+            <label>Full Name</label><br> 
+            <input type="text" id="name" required>
+            </div>
+           
+            <div>
+            <label>4-Digit Extension</label><br> 
+            <input type="text" id="ext" maxlength="4" required>
+            </div>
+            
+            <div>
+            <label>Email</label><br> 
+            <input type="email" id="email" required>
+            </div>
+           
+            <div>
+            <label>Department</label><br> 
+            <select type="text" id="department" required>
+                <option value="Administrative">Administrative</option>
+                <option value="Engineering">Engineering</option>
+                <option value="Executive">Executive</option>
+                <option value="Marketing">Marketing</option>
+                <option value="Quality Assurance">Quality Assurance</option>
+                <option value="Sales">Sales</option>
+            </select>
+            </div>
+            
+            <hr>
+
+            <div>
+            <input class="btn btn-primary" id="submit" type="submit" value="Add Employee">
+            </div>
+        </fieldset> 
+    </form>
+    <script src="js/script.js"></script>
+</body>
+</html>
